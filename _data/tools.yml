@@ -1,0 +1,19 @@
+- name: Eric Mill
+  github: konklone
+  description: lorem ipsum dolor sit amet
+  image: http://placehold.it/700x400
+
+- name: Parker Moore
+  github: parkr
+  description: lorem ipsum dolor sit amet
+  image: http://placehold.it/700x400
+
+- name: Liu Fengyun
+  github: liufengyun
+  description: lorem ipsum dolor sit amet
+  image: http://placehold.it/700x400
+
+- name: Tobias
+  github: cheatman
+  description: salalalaa
+  image: http://placehold.it/700x400

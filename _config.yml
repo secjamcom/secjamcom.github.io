@@ -1,0 +1,51 @@
+title: SecJam
+email: info@secjam.com
+description: IT Security related research and development
+baseurl: ""
+twitter_username: secjamcom
+github_username:  secjamcom
+
+collections:
+  cheatsheets:
+    output: true
+  articles:
+    output: true
+
+defaults:
+  - scope:
+      path: "cheatsheets"
+      type: "cheatsheets"
+    values:
+      layout: "default"
+  - scope:
+      path: "articles"
+      type: "articles"
+    values:
+      layout: "default"
+
+gems:
+  - jekyll-feed
+
+#pagination:
+#  articles:
+#    per_page: 5 # used to be 'paginate'
+#    template: /index.html
+#    permalink: /index:num # used to be 'paginate_path'
+
+# Enable disqus
+disqus:
+  shortname: secjam-com
+
+# Google Analytics
+google-analytics: UA-92112806-1
+
+# Base Settings
+excerpt_separator: <!--more-->
+markdown: kramdown
+show_dir_listing: false
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

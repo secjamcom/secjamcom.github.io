@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Our articles</h1>
+    </div>
+</div>
+<!-- /.row -->
+
+{% for article in site.articles %}
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>{{ article.title | escape }}</h3>
+                <h4>by {{ article.author }}</h4>
+                <p>{{ article.excerpt }}</p>
+                <a class="btn btn-primary" href="{{ article.url | relative_url }}">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+<hr>
+{% endfor %}
+
+<!-- Pagination links -->
+<!--<div class="row text-center">
+  <div class="col-lg-12">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+  {% else %}
+    <span class="previous">&laquo;</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a>
+  {% else %}
+    <span class="next ">&raquo;</span>
+  {% endif %}
+  </div>
+</div>-->
