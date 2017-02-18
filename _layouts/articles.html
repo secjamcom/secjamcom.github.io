@@ -19,8 +19,8 @@ layout: default
             </div>
             <div class="col-md-5">
                 <h3>{{ article.title | escape }}</h3>
-                <h4>by {{ article.author }}</h4>
-                <p>{{ article.excerpt }}</p>
+                <h4>by {{ article.author | escape }} on {{ article.date | date: "%b %-d, %Y" }}</h4>
+                <p>{{ article.excerpt | strip_html }}</p>
                 <a class="btn btn-primary" href="{{ article.url | relative_url }}">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
