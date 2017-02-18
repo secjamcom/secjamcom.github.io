@@ -36,6 +36,9 @@ gems:
 disqus:
   shortname: secjam-com
 
+page:
+  comments: true
+
 # Google Analytics
 google-analytics: UA-92112806-1
 
