@@ -12,7 +12,7 @@
     </div>
     <!-- /.container -->
 
-    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% if site.github.environment and site.google_analytics %}
       {% include google-analytics.html %}
     {% endif %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
