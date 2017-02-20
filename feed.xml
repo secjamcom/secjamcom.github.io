@@ -1,0 +1,20 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title }} - Articles</title>
+    <description>{{ site.description }}</description>
+    <link>{{ site.url }}</link>
+    {% for article in site.articles %}
+        <item>
+          <title>{{ article.title | xml_escape }}</title>
+          <description>{{ article.excerpt | strip_html | normalize_whitespace | xml_escape | truncate: 160 | escape }}</description>
+          <pubDate>{{ article.date | date_to_xmlschema }}</pubDate>
+          <link>{{ article.url | prepend: site.url }}</link>
+          <guid isPermaLink="true">{{ article.url | prepend: site.url }}</guid>
+        </item>
+    {% endfor %}
+  </channel>
+</rss>

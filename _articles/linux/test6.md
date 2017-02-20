@@ -2,7 +2,7 @@
 layout: page
 title: "Some articles are just so long they deserve a really long title to see if things will break well"
 categories: linuxkernel
-tags: linux kernel research
+tags: linux, kernel, research
 author: Tobias
 date: 2017-02-18 18:02:01
 ---

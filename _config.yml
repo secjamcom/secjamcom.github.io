@@ -23,8 +23,10 @@ defaults:
     values:
       layout: "default"
 
-gems:
-  - jekyll-feed
+github:
+  contributors:
+    - login: drmckay
+      avatar_url: 
 
 #pagination:
 #  articles:
@@ -40,7 +42,7 @@ page:
   comments: true
 
 # Google Analytics
-google-analytics: UA-92112806-1
+google_analytics: UA-92112806-1
 
 # Base Settings
 excerpt_separator: <!--more-->
